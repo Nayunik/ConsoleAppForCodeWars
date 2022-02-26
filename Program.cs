@@ -39,11 +39,47 @@ namespace ConsoleAppForCodeWars
             }
 
         }
+
+        private static int GetSum(int a, int b)
+        {
+            //Good Luck!
+            int sum = 0, num;
+            if (a == b)
+            {
+                return a;
+            }
+            else if (a < b)
+            {
+                num = a;
+                while (num<=b)
+                {
+
+                    sum += num;
+                    num++;
+                }
+                return sum;
+            }
+            else
+            {
+                num = b;
+                while (num <= a)
+                {
+
+                    sum += num;
+                    num++;
+                }
+                return sum;
+            }
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("Это задание с Codewars 27.02.22!");
-           
+            /*Console.WriteLine("Это 1 задание с Codewars 27.02.22!");
             Console.WriteLine(CheckEnding("afahfjweeerr", "eerr"));
+*/
+            Console.WriteLine("Это 2 задание с Codewars 27.02.22!");
+            Console.WriteLine(GetSum(2, -1));
+            Console.WriteLine(GetSum(0, 2));
+
             Console.ReadLine();
         }
     }
