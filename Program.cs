@@ -43,7 +43,7 @@ namespace ConsoleAppForCodeWars
         {
             Console.WriteLine("Это задание с Codewars 27.02.22!");
            
-            Console.WriteLine(CheckEnding("afahfjweeerr","eerr"));
+            Console.WriteLine(CheckEnding("afahfjweeerr", "eerr"));
             Console.ReadLine();
         }
     }
