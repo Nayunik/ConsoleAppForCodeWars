@@ -71,6 +71,19 @@ namespace ConsoleAppForCodeWars
                 return sum;
             }
         }
+        
+        private static int ConvertMasToDecimal(int[] mas)
+        {
+            int result = 0, masLen = mas.Length;
+
+            for(int i = masLen; i >= 0; i-- )
+            {
+                if(mas[i-1] == 1)
+                result += Convert.ToInt32(Math.Pow(2, masLen - i));
+            }
+            return result;
+        }
+
         static void Main(string[] args)
         {
             /*Console.WriteLine("Это 1 задание с Codewars 27.02.22!");
