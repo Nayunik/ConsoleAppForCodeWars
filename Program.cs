@@ -84,6 +84,21 @@ namespace ConsoleAppForCodeWars
             return result;
         }
 
+        private static string ToJadenCase(string phrase)
+        {
+            string[] mas = phrase.Split(' ');
+            string endWord = "";
+            phrase = "";
+            foreach (string word in mas)
+            {
+                endWord = word.Substring(1);
+                phrase += word[0].ToString().ToUpper() + endWord + " ";
+            }
+            phrase = phrase.Substring(0, phrase.Length - 1);
+            return phrase;
+        }
+
+
         static void Main(string[] args)
         {
             /*Console.WriteLine("Это 1 задание с Codewars 27.02.22!");
